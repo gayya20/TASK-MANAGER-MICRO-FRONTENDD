@@ -50,7 +50,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),
-    // Only need ONE DefinePlugin instance - combine them
     new webpack.DefinePlugin({
       'process.env': JSON.stringify({
         REACT_APP_API_URL: 'http://localhost:5000/api',
