@@ -4,7 +4,6 @@ import { ConfigProvider } from 'antd';
 import TaskManagement from './TaskManagement';
 // import 'antd/dist/antd.css';
 
-// Mount function to render the app in development mode
 const mount = (rootElement: HTMLElement) => {
   const root = ReactDOM.createRoot(rootElement);
   
@@ -17,7 +16,6 @@ const mount = (rootElement: HTMLElement) => {
   );
 };
 
-// If we are in development and running in isolation
 if (process.env.NODE_ENV === 'development') {
   const rootElement = document.getElementById('root');
   
@@ -26,5 +24,4 @@ if (process.env.NODE_ENV === 'development') {
   }
 }
 
-// We are running in a container (host) app
 export { TaskManagement };

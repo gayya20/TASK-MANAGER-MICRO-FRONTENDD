@@ -5,7 +5,7 @@ import { TaskFilter, TasksResponse, Task, TaskResponse, CreateTaskRequest, Updat
 // Configure axios
 const API_URL = 'http://localhost:5000/api';
 
-// Create a function to get the axios instance with current token
+// Create a function 
 const getAxiosInstance = () => {
   const token = localStorage.getItem('token');
   
